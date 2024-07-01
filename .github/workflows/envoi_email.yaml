@@ -1,5 +1,5 @@
 # Nom du workflow
-name: Envoi_mail
+name: Envoi_email
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 # que fait le workflow
 
 jobs:
-    envoi_mail:
+    envoi_email:
       permissions:
         contents: write
         pages: write
