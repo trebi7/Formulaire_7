@@ -28,6 +28,8 @@ jobs:
           packages: |
             any::tidyverse
             any::robotoolbox
+            any::janitor
+            
       - name: importation données
         run: Rscript -e 'source("import_data.R")'
         env:
