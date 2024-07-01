@@ -32,7 +32,7 @@ jobs:
             password: ${{secrets.MAIL_PASSWORD_GHA}}
             subject: Le Tableau recapitulatif du jour
             to: armanddavy7@gmail.com
-            from: TRE BI Armand Davy
+            from: Armand Davy
             body: Veuillez trouver ci-joint le tableau recapitulatif de la situation de la collecte de ce jour
             cc: ilgatbad@gmail.com
             ignore_cert: true
