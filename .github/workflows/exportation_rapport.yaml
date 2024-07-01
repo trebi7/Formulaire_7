@@ -47,8 +47,8 @@ jobs:
 
     - name: Commit results
       run: |
-          git config --local user.email "kn.samati@gmail.com"
-          git config --local user.name "knsamati"
+          git config --local user.email "armanddavy7@gmail.com"
+          git config --local user.name "trebi7"
           git add mon_rapport.pdf
           git commit -m 'Rapport updated' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
