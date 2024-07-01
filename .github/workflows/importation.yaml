@@ -33,6 +33,8 @@ jobs:
         env:
           MY_TOKEN: ${{ secrets.MY_TOKEN_GHA }}
           MY_UID: ${{ secrets.MY_UID_GHA }}
+          MY_USER: ${{ secrets.MY_USER_GHA }}
+          MY_PASSWORD: ${{ secrets.MY_PASSWORD_GHA}}
           
       - name: commit results
         run: |
