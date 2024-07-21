@@ -34,7 +34,7 @@ jobs:
             to: armanddavy7@gmail.com
             from: Armand Davy
             body: Veuillez trouver ci-joint le tableau recapitulatif de la situation de la collecte de ce jour
-            cc: kouafirk@gmail.com
+            cc: ilgatbad@gmail.com
             ignore_cert: true
             convert_markdown: true
             attachments: mon_rapport.pdf
