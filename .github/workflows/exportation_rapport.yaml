@@ -28,10 +28,6 @@ jobs:
       uses: quarto-dev/quarto-actions/setup@v2
       with:
         tinytex: true
-    - name: Check chromium
-      run: |
-        echo $(which chromium-browser)
-        $(which chromium-browser) --headless https://www.chromestatus.com
     - name: Render Quarto Project
       uses: quarto-dev/quarto-actions/render@v2
       with:
