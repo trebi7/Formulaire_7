@@ -26,12 +26,12 @@ readRDS('mydf.rds') |>
 
 df %>% 
   labelled::remove_val_labels() %>%
-  summarise(nombre = n(),.by=enqueteur) %>%
+  summarise(nombre = n(),.by=equipe) %>%
   ungroup %>%
-  add_row( enqueteur = 'Moyenne', !!! colMeans(.[-1])) %>%
-  mutate(sup_moy = ifelse(enqueteur == "Moyenne", TRUE, FALSE)) %>% 
-  mutate(enqueteur = fct_reorder(enqueteur, nombre)) %>% 
-  ggplot(aes(x=enqueteur,y=nombre,fill=sup_moy)) +
+  add_row( equipe = 'Moyenne', !!! colMeans(.[-1])) %>%
+  mutate(sup_moy = ifelse(equipe == "Moyenne", TRUE, FALSE)) %>% 
+  mutate(equipe = fct_reorder(equipe, nombre)) %>% 
+  ggplot(aes(x=equipe,y=nombre,fill=sup_moy)) +
   geom_col(show.legend = FALSE) +
   scale_fill_manual(name=NULL, values = c("#B0B0B0D0", "#00B0F0"))+
   coord_flip() +
@@ -46,4 +46,3 @@ df %>%
 
  
 ```
-
